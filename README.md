@@ -7,8 +7,6 @@
 
 ## About
 
-[**📚 Read this template tutorial! 📚**][template-docs]
-
 This template is designed for compiling Rust libraries into WebAssembly and
 running the resulting package on Planetr.
 
