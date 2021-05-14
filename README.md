@@ -10,9 +10,9 @@
 This template is designed for compiling Rust libraries into WebAssembly and
 running the resulting package on Planetr.
 
-## 🚴 Usage
+## Usage
 
-### 🐑 Use `cargo generate` to Clone this Template
+### Use `cargo generate` to Clone this Template
 
 [Learn more about `cargo generate` here.](https://github.com/ashleygwilliams/cargo-generate)
 
