@@ -27,5 +27,5 @@ cd my-project
 wasm-pack build --target web
 ```
 
-You need to have wasm-pck installed. You can install it by usign cargo ```cargo install wasm-pack```. 
-More details on installation [here](https://rustwasm.github.io/wasm-pack/installer/)
+You need to have wasm-pack installed. You can install it by running ```cargo install wasm-pack```. 
+More details on installation [here](https://rustwasm.github.io/wasm-pack/installer/).
