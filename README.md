@@ -24,5 +24,5 @@ cd my-project
 ### 🛠️ Build with `wasm-pack build`
 
 ```
-wasm-pack build
+wasm-pack build --target web
 ```
