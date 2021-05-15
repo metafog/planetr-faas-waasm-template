@@ -10,7 +10,7 @@ pub fn handle_req(params: Value) -> Result<PlanetrResponse, PlanetrError> {
     // -----------------------------
 
     //error condition
-    if params["name"].to_string() == "null" {
+    if params["name"] == Value::Null {
         return Err(PlanetrError::new("Name cannot be empty"));
     }
 
