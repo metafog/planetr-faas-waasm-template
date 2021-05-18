@@ -24,7 +24,7 @@ cd my-project
 ### 🛠️ Build with `wasm-pack build`
 
 ```
-wasm-pack build --target web
+wasm-pack build
 ```
 
 You need to have wasm-pack installed. You can install it by running ```cargo install wasm-pack```. 
