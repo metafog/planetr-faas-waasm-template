@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
-use crate::Context;
-use crate::PlanetrError;
+use planetr::wasm::Context;
+use planetr::wasm::PlanetrError;
 
 #[derive(Deserialize, Serialize)]
 pub struct InputPayload {
