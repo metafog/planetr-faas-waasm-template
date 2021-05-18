@@ -11,7 +11,7 @@ pub struct InputPayload {
 #[derive(Deserialize, Serialize)]
 pub struct OuputPayload {
     // Define output payload JSON structure HERE
-    body: String,
+    hello: String,
 }
 
 pub fn handle_req(args: InputPayload, ctx: Context) -> Result<OuputPayload, PlanetrError> {
@@ -25,10 +25,19 @@ pub fn handle_req(args: InputPayload, ctx: Context) -> Result<OuputPayload, Plan
         return Err(PlanetrError::new("missing name field in request"));
     }
 
+    //HTTP request feature...
+    /*
+    let resp = match ctx.http_get("https://planetr.io"){
+        Ok(resp) => resp,
+        Err(err) => return Err(err)
+    };
+    */
+
+    //Log
     ctx.log(format!("Name={}", args.name));
 
-    //convert to upper case and add Hello...
+    //convert to upper case and respond Hello...
     Ok(OuputPayload{
-        body: format!("Hello {}", args.name).to_string(),
+        hello: format!("Hello {}", args.name).to_string(),
     })
 }
