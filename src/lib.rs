@@ -17,6 +17,9 @@ pub extern fn _planetr_run_func(req_json: *mut c_char) -> *const c_char {
     };
 
     let ctx = planetr::wasm::Context{};
+    ctx.log("".to_string());
+    let _r = ctx.http_get("".to_string()).unwrap();
+
     let result = match handler::handle_req(json_req, ctx){
         Ok(result) => result,
         Err(err) => return planetr::wasm::wasm_error(&err.to_string())  
